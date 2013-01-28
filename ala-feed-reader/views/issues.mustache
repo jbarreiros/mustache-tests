@@ -1,0 +1,14 @@
+<section id="issues">
+    <h2>Latest Issues</h2>
+
+    <ul class="nested">
+    {{#issues}}
+    <li><span class="issue">Issue #{{num}}</span>
+        <ul>
+            {{#articles}}
+            <li><a href="{{url}}">{{title}}</a></li>
+            {{/articles}}
+        </ul></li>
+    {{/issues}}
+    </ul>
+</section>

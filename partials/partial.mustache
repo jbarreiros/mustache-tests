@@ -1,5 +1,5 @@
 {{#details}}
 <div>{{street-address}}</div>
-<div>{{city}}, {{state}} {{override-details.zip}}</div>
+<div>{{city}}, {{state}} {{#override-details.zip}}{{override-details.zip}}{{/override-details.zip}}{{^override-details.zip}}{{zip}}{{/override-details.zip}}</div>
 {{#phone}}<div>{{phone}}</div>{{/phone}}{{^phone}}<div>No phone provided</div>{{/phone}}
 {{/details}}
